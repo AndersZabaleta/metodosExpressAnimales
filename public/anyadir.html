@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Nombre" id="nombre" />
+    <input type="text" placeholder="Raza" id="raza" />
+    <input type="text" placeholder="Edad" id="edad" />
+    <select onchange="manageChange(event)">
+      <option value="perros">Perro</option>
+      <option value="gatos">Gato</option>
+    </select>
+    <button onclick="anyadir()">Envíar</button>
+    <div id="div1"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
