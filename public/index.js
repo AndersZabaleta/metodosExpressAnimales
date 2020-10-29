@@ -34,14 +34,11 @@ function manageChange(event) {
 }
 
 function anyadir() {
-  let nombre = document.getElementById("nombre").value;
-  let raza = document.getElementById("raza").value;
-  let edad = parseInt(document.getElementById("edad").value);
   let animal = {
-    nombre,
-    raza,
-    edad,
-    tipo,
+    nombre: document.getElementById("nombre").value,
+    raza: document.getElementById("raza").value,
+    edad: parseInt(document.getElementById("edad").value),
+    tipo: tipo,
   };
 
   fetch("/animales", {
